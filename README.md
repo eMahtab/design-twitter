@@ -23,13 +23,13 @@ You need to fetch the users, whom user X is following, next get the tweets of ea
 
 # Precompute the user's home timeline
 
-## Fan out Service :
-Fan out service  is responsible for spreading out the tweet to all people following the author by inserting the tweet in to all their home timelines. 
+## Fanout Service :
+Fanout service  is responsible for spreading out the tweet to all people following the author by inserting the tweet in to all their home timelines. 
 Home timelines for active users are stored in redis cluster.
 
-!["Fan out Service"](fan-out-write-tweet.PNG?raw=true)
+!["Fanout Service"](fan-out-write-tweet.PNG?raw=true)
 
-Don't fanout write for users with large number of followers. Only do fan out for users with small number of followers.
+**Don't fanout write for users with large number of followers. Only do fanout for users with small number of followers.**
 
 ## Hydrating the tweet
 Since the timeline only contains tweet IDs they must “hydrate” those tweets, that is find the text of the tweets. Given an array of IDs they can do a multiget and get the tweets in parallel from T-bird.
