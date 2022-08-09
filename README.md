@@ -18,6 +18,8 @@ Non functional requirements :
 First we need to know which all users, user X is following. e.g. lets say user X is following 150 users, and we have a graph service which can return the list of users
 a user is following. We can call the graph service passing the user X's userId to get the list of users, that user X is following.
 
+## Fan out :
 
+Don't fanout write for users with large number of followers. Only do fan out for users with small number of followers.
 
 # References :
