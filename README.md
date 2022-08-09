@@ -27,6 +27,9 @@ You need to fetch the users, whom user X is following, next get the tweets of ea
 ## Hydrating the tweet
 Since the timeline only contains tweet IDs they must “hydrate” those tweets, that is find the text of the tweets. Given an array of IDs they can do a multiget and get the tweets in parallel from T-bird.
 
+## Timeline Service
+
+
 ## Fan out :
 
 Don't fanout write for users with large number of followers. Only do fan out for users with small number of followers.
