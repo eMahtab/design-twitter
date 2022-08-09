@@ -19,7 +19,7 @@ First we need to know which all users, user X is following. e.g. lets say user X
 a user is following. We can call the graph service passing the user X's userId to get the list of users, that user X is following.
 
 As you can see creating a user's home timeline on the fly is time consuming and requires some amount of processing.
-You need to fetch the users, whome user X is following, next get the tweets of each user, whome user X is following. Next sort the tweets in reverse chronological order.
+You need to fetch the users, whom user X is following, next get the tweets of each user, whom user X is following. Next sort the tweets in reverse chronological order.
 
 ## Fan out :
 
