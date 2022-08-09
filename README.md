@@ -15,10 +15,4 @@ Non functional requirements :
 
 
 
-!["Twitter"](twitter-system.PNG?raw=true)
-
-
-
-
-
 # References :
