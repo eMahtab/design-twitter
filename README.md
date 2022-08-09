@@ -21,6 +21,8 @@ a user is following. We can call the graph service passing the user X's userId t
 As you can see creating a user's home timeline on the fly is time consuming and requires some amount of processing.
 You need to fetch the users, whom user X is following, next get the tweets of each user, whom user X is following. Next sort the tweets in reverse chronological order.
 
+## Precompute the user's home timeline
+
 ## Fan out :
 
 Don't fanout write for users with large number of followers. Only do fan out for users with small number of followers.
