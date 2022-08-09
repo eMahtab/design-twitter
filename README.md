@@ -14,5 +14,10 @@ Non functional requirements :
 3. The system should have very low latency
 
 
+## How to construct a user's (X) home timeline 
+First we need to know which all users, user X is following. e.g. lets say user X is following 150 users, and we have a graph service which can return the list of users
+a user is following. We can call the graph service passing the user X's userId to get the list of users, that user X is following.
+
+
 
 # References :
