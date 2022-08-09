@@ -32,7 +32,7 @@ Since the timeline only contains tweet IDs they must “hydrate” those tweets,
 
 ## Fan out Service :
 
-!["Fan out Service"](fan-out-write-tweet?raw=true)
+!["Fan out Service"](fan-out-write-tweet.PNG?raw=true)
 
 Don't fanout write for users with large number of followers. Only do fan out for users with small number of followers.
 
