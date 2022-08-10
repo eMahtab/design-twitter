@@ -47,3 +47,5 @@ Since the timeline only contains tweet IDs they must “hydrate” those tweets,
 # References :
 How We Learned to Stop Worrying and Love Fan-In at Twitter by Mike Cvet :
 https://www.youtube.com/watch?v=WEgCjwyXvwc
+
+Twitter hybrid approach (to handle celebrity tweets : https://www.youtube.com/watch?v=vF2HK9uGOy0) by Rachit
