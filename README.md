@@ -21,13 +21,12 @@ a user is following. We can call the graph service passing the user X's userId t
 As you can see creating a user's home timeline on the fly is time consuming and requires some amount of processing.
 You need to fetch the users, whom user X is following, next get the tweets of each user, whom user X is following. Next sort the tweets in reverse chronological order.
 
-# Cache the Home Timeline of active users
+!["Twitter"](twitter.PNG?raw=true)
+
+# Precompute the user's home timeline : Cache the Home Timeline of active users
 
 !["Fanout on a new tweet post"](fanout.PNG?raw=true)
 
-# Precompute the user's home timeline
-
-!["Twitter"](twitter.PNG?raw=true)
 
 ## Fanout Service :
 Fanout service  is responsible for spreading out the tweet to all people following the author by inserting the tweet in to all their home timelines. 
