@@ -23,6 +23,8 @@ You need to fetch the users, whom user X is following, next get the tweets of ea
 
 # Cache the Home Timeline of active users
 
+!["Fanout on a new tweet post"](fanout.PNG?raw=true)
+
 # Precompute the user's home timeline
 
 ## Fanout Service :
