@@ -13,6 +13,8 @@ Non functional requirements :
 2. The system should be highly available
 3. The system should have very low latency
 
+# User Timeline
+To get a particular user's timeline, we make a call to UserTimeline Service, which basically returns all the tweets (fetched from tweets table) and retweets that user has made. Also since the generation of user's timeline can take some time, its a good idea to also cache the User's timeline, when its generated.  
 
 ## How to construct a user's (X) home timeline 
 First we need to know which all users, user X is following. e.g. lets say user X is following 150 users, and we have a graph service which can return the list of users
