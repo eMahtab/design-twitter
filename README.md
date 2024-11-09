@@ -32,7 +32,7 @@ You need to fetch the users, whom user X is following, next get the tweets of ea
 
 ## Fanout Service :
 Fanout service  is responsible for spreading out the tweet to all people following the author by inserting the tweet in to all their home timelines. 
-Home timelines for active users are stored in redis cluster.
+**Home timelines for active users are stored in redis cluster.**
 
 !["Fanout Service"](fan-out-write-tweet.PNG?raw=true)
 
